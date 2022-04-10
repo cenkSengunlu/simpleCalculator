@@ -10,15 +10,24 @@ function clickMyBtn () {
         return;
     }
 
-    if(operation !== '+'){
-        alert("You can use just '+'");
-        return;
-    }
+    let output;
+    switch(operation) {
+        case "+":
+            output = parseInt(val1) + parseInt(val2);
+          break;
+        case "/":
+            output = parseInt(val1) / parseInt(val2);
+          break;
+        default:
+            document.querySelector('.output').innerHTML = `Invalid expression`;
+            return;
+      }
 
-    document.querySelector('.output').innerHTML = `Output: ${parseInt(val1) + parseInt(val2)}`
 
-    document.querySelector('.output').classList.remove("hidden");
-    document.querySelector('.output').classList.add("flex");
+
+    document.querySelector('.output').innerHTML = `Output: ${output}`;
+
+
     
 }
 
