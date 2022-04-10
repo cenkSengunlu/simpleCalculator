@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel='icon' href='favicon.png' type='image/x-icon' sizes="16x16" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="mainScreen w-full h-screen flex justify-center items-center">
+        
+        <div class="calculator w-96 h-96 flex flex-col items-between justify-between p-3 rounded-md">
+            <div class="flex flex-col">
+                <p class="text-xl">Enter First Value</p>
+                <input class="val1 rounded-md h-10 pl-5 text-xl" onkeypress="isInputNumber(event)"></input>
+            </div>
+
+            <div class="flex flex-col">
+                <p class="text-xl">Enter Second Value</p>
+                <input class="val2 rounded-md h-10 pl-5 text-xl" onkeypress="isInputNumber(event)"></input>
+            </div>
+
+            <div class="flex flex-col">
+                <p class="text-xl">Enter Operate (Just +)</p>
+                <input class="operation rounded-md h-10 pl-5 text-xl"></input>
+            </div>
+
+            <div class="calculateBtn cursor-pointer h-10 flex justify-center items-center text-2xl rounded-md">Calculate</div>
+
+            <div class="output h-10 justify-center items-center text-2xl hidden"></div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+    font-family: "Fira Sans","Trebuchet MS",Ubuntu,Helvetica,Arial,sans-serif;
+}
+
+body{
+    background-color: #1a202e;
+    color: #e2e8f0;
+}
+
+.calculateBtn{
+    background-color: #1c2230;
+    border: 2px solid #27303f;
+}
+
+.calculator{
+    border: 3px solid #27303f;
+}
+
+.operation, .val1, .val2{
+    color: #97a6ba;
+    background-color: #292847;
+    
+}
+
+.operation:focus, .val1:focus, .val2:focus{
+    outline: none;
+}
+
+.calculateBtn:hover{
+    background-color: #212833;
+}
+
