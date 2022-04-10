@@ -19,13 +19,17 @@ function clickMyBtn () {
             output = parseInt(val1) / parseInt(val2);
           break;
         default:
-            document.querySelector('.output').innerHTML = `Invalid expression`;
+            document.querySelector('.output').innerHTML = 'Invalid expression';
             return;
       }
 
-
-
-    document.querySelector('.output').innerHTML = `Output: ${output}`;
+      if(output === Infinity){
+        document.querySelector('.output').innerHTML = 'Error: Divide by zero';
+      }
+      else{
+        document.querySelector('.output').innerHTML = `Output: ${output}`;
+      }
+    
 
 
     
